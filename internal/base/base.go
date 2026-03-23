@@ -14,16 +14,16 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hibiken/asynq/internal/errors"
-	pb "github.com/hibiken/asynq/internal/proto"
-	"github.com/hibiken/asynq/internal/timeutil"
 	"github.com/redis/go-redis/v9"
+	"github.com/taigroddy/asynq/internal/errors"
+	pb "github.com/taigroddy/asynq/internal/proto"
+	"github.com/taigroddy/asynq/internal/timeutil"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
 // Version of asynq library and CLI.
-const Version = "0.26.0"
+const Version = "0.26.3"
 
 // DefaultQueueName is the queue name used if none are specified by user.
 const DefaultQueueName = "default"
