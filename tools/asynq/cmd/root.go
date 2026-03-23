@@ -18,12 +18,12 @@ import (
 
 	"github.com/MakeNowJust/heredoc/v2"
 	"github.com/fatih/color"
-	"github.com/hibiken/asynq"
-	"github.com/hibiken/asynq/internal/base"
-	"github.com/hibiken/asynq/internal/rdb"
 	"github.com/redis/go-redis/v9"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
+	"github.com/taigroddy/asynq"
+	"github.com/taigroddy/asynq/internal/base"
+	"github.com/taigroddy/asynq/internal/rdb"
 	"golang.org/x/exp/utf8string"
 
 	homedir "github.com/mitchellh/go-homedir"
@@ -62,7 +62,7 @@ var rootCmd = &cobra.Command{
 		$ asynq task list --queue=myqueue --state=archived`),
 	Annotations: map[string]string{
 		"help:feedback": heredoc.Doc(`
-			Open an issue at https://github.com/hibiken/asynq/issues/new/choose`),
+			Open an issue at https://github.com/taigroddy/asynq/issues/new/choose`),
 	},
 }
 
